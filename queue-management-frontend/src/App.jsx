@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import MainScreen from './components/MainScreen/MainScreen';
 import OperatorPanel from './components/OperatorPanel/OperatorPanel';
 import AdminPanel from './components/AdminPanel/AdminPanel';
+import Kiosk from './components/Kiosk/Kiosk';
+
 
 function App() {
   return (
@@ -21,6 +23,11 @@ function App() {
         
         {/* Página de selección de ventanilla */}
         <Route path="/seleccionar" element={<SelectWindow />} />
+
+        {/* Página de kiosc */}
+        <Route path="/kiosco" element={<Kiosk/>} />
+
+
       </Routes>
     </BrowserRouter>
   );
