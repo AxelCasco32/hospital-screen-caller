@@ -59,12 +59,9 @@ export const windowsAPI = {
 };
 
 // ===== SERVICIOS DE COLA =====
-export const queueAPI = {
-  // Estado de la cola
-  getStatus: () => api.get('/windows/queue/status'),
 
-  // Resetear cola completa
+export const queueAPI = {
+  getStatus: () => api.get('/windows/queue/status'),
   reset: () => api.post('/windows/queue/reset'),
 };
-
 export default api;
